@@ -7,10 +7,10 @@ import numpy as np
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = load_model("./models/keras_model.h5", compile=False)
+model = load_model("./model/keras_model.h5", compile=False)
 
 # Load the labels
-class_names = open("./models/labels.txt", "r").readlines()
+class_names = open("./model/labels.txt", "r").readlines()
 
 # Streamlit interface
 st.title("Image Classification with Keras")
